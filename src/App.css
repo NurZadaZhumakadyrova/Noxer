@@ -1,0 +1,10 @@
+body {
+  background-color: #F1F1F1;
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  margin: 0 auto;
+  box-sizing: border-box;
+}

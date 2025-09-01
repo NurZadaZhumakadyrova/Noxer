@@ -1,12 +1,13 @@
 import './App.css';
+import Layout from './Components/Layout/Layout.tsx';
 
 const App = () => {
 
 
   return (
-    <>
-      Hello World!
-    </>
+    <div className="Container">
+      <Layout/>
+    </div>
   );
 };
 

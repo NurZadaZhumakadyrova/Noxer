@@ -1,0 +1,254 @@
+.header {
+    margin-bottom: 15px;
+}
+
+.header-top {
+    width: 360px;
+    height: 55px;
+    display: flex;
+}
+
+.time{
+    width: 54px;
+    height: 22px;
+    margin: 18.34px 162px 13.66px 36px;
+    font-weight: 590;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.43px;
+    text-align: center;
+}
+
+.icons {
+    width: 79px;
+    height: 13px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 29px;
+    margin-top: 23px;
+    margin-bottom: 18px;
+}
+
+.icon-CC {
+    width: 19.2px;
+    height: 12px;
+}
+
+.icon-WiFi {
+    width: 17.12px;
+    height: 12.1px;
+}
+
+.icon-BI {
+    width: 27px;
+    height: 13px;
+}
+
+.header-center {
+    width: 350px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 10px;
+}
+
+.button {
+    width: 73px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px 14px;
+    background-color: #C6C6C64D;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.button-icon {
+    width: 7px;
+    height: 7px;
+    margin-left: -4px;
+}
+
+.button-text {
+    width: 47px;
+    height: 8px;
+    font-size: 11px;
+    color: #666666;
+    margin-top: -2px;
+    margin-left: 5px;
+}
+
+.contact {
+    width: 126px;
+    height: 30px;
+    gap: 10px;
+    border-radius: 40px;
+    padding: 3px 7px 3px 3px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    width: 116px;
+    height: 24px;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tg-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-text {
+    width: 86px;
+    height: 14px;
+    gap: 2px;
+    font-size: 13px;
+    color: #292928;
+    font-weight: 500;
+    line-height: 105%;
+}
+
+.menu-info {
+    width: 64px;
+    height: 30px;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 10px 14px;
+    background-color: #C6C6C64D;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 36px;
+    height: 7.58px;
+    gap: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.vector {
+    width: 12px;
+    height: 6px;
+    angle: 180 deg;
+    border-width: 1.5px;
+}
+
+.more {
+    width: 12px;
+    height: 7.58px;
+}
+
+.header-bottom {
+    width: 350px;
+    height: 39px;
+    top: 97px;
+    left: 5px;
+    margin: 0 auto;
+    gap: 10px;
+    border-radius: 30px;
+    padding: 11px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 #3030300D;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 90%;
+    outline: none;
+    height: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 114.99999999999999%;
+    border: none;
+    margin-left: -10px;
+    color: #B5B5B5;
+}
+
+.search-button {
+    border: none;
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+.search-icon {
+    width: 17px;
+    height: 17px;
+}
+
+@media (min-width: 370px) and (max-width: 425px) {
+    .header-top {
+        width: 365px;
+        height: 55px;
+        margin: 0 auto;
+    }
+
+    .time {
+        margin-left: 16px;
+    }
+
+    .icons {
+        margin-left: auto;
+    }
+
+    .header-center {
+        width: 95%;
+        justify-content: space-between;
+    }
+
+    .header-bottom {
+        width: 95%;
+        max-width: 425px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 600px) {
+    .header-top {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .time {
+        margin-left: 20px;
+    }
+
+    .icons {
+        margin-right: 20px;
+    }
+
+    .header-center {
+        width: 98%;
+        max-width: 600px;
+        margin: 0 auto 10px;
+        justify-content: space-between;
+    }
+
+    .header-bottom {
+        width: 98%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 601px) {
+    .header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .header-top,
+    .header-center,
+    .header-bottom {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
