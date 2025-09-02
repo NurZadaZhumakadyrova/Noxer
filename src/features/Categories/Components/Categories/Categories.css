@@ -39,9 +39,10 @@
   right: 0;
 }
 
-@media (min-width: 361px) and (max-width: 1200px) {
+@media (min-width: 361px) and (max-width: 1500px) {
   .categories-wrapper,
   .categories {
     width: 98%;
+    margin: 10px auto;
   }
 }

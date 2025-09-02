@@ -1,19 +1,20 @@
 import React from 'react';
-import type { IProduct } from '../../../types.ts';
+import type { IProduct } from '../../../../../types.ts';
 import "./Product.css";
+import noImage from "../../../../../assets/no-image.jpg";
 
 interface Props {
   product: IProduct;
 }
 const Product:React.FC<Props> = ({product}) => {
-  let image = '';
+  let image = noImage;
   let productPrise = 0;
   let oldProductPrise = 0;
   let discountPoint = 0;
 
   product.images.forEach((product) => {
 
-    if (product.MainImage) {
+    if (product.MainImage && product.Image_URL !== "") {
       image = product.Image_URL;
     }
   });

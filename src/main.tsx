@@ -4,10 +4,13 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Provider } from 'react-redux';
 import { store } from './app/store.ts';
+import { BrowserRouter } from 'react-router-dom';
 
 createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
-    <ToastContainer />
-    <App />
+    <BrowserRouter>
+      <ToastContainer />
+      <App />
+    </BrowserRouter>
   </Provider>,
 );

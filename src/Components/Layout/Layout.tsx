@@ -1,16 +1,17 @@
 import Header from '../Header/Header.tsx';
-import AdSection from '../AdSection/AdSection.tsx';
 import React, { type PropsWithChildren } from 'react';
 import Footer from '../Footer/Footer.tsx';
+import "./Layout.css";
 
 const Layout:React.FC<PropsWithChildren> = ({children}) => {
   return (
-    <>
+    <div className="app-container">
       <Header/>
-      <AdSection/>
-      {children}
+      <main className="main-content">
+        {children}
+      </main>
       <Footer/>
-    </>
+    </div>
   );
 };
 

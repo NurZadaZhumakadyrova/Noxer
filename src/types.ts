@@ -62,13 +62,24 @@ export interface IProduct {
   images: IProductImg[];
   marks: IProductMark;
   parameters: IProductParameter[];
+  importance_num: {
+    id: number;
+    importance: number;
+    product_id: number;
+  }[];
 }
 
 export interface ApiResponse {
-  categories: ICategory[];
+  categories?: ICategory[];
   pagination: IPagination;
-  product_marks: IProductMark[];
+  product_marks?: IProductMark[];
   products: IProduct[];
-  status: string;
+  status?: string;
+}
+
+export interface FetchProductsParams {
+  page: number;
+  per_page?: number;
+  on_main?: boolean;
 }
 

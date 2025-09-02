@@ -11,3 +11,13 @@ export const getCategories = createAsyncThunk<ApiResponse, void>(
     return response.data;
   }
 );
+
+export const getProductsPagination = createAsyncThunk<ApiResponse, {page: number, per_page: number}>(
+  "categories/getProductsPagination",
+  async ({ page, per_page }) => {
+    const response = await axiosApi<ApiResponse>("/products", {
+      params: { on_main: false, page, per_page },
+    });
+    return response.data;
+  }
+);

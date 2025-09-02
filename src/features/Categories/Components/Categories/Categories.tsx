@@ -2,6 +2,7 @@ import Category from './Category/Category.tsx';
 import React, { useRef } from 'react';
 import type { ICategory } from '../../../../types.ts';
 import "./Categories.css";
+import product from '../../../Products/Components/Products/Product/Product.tsx';
 
 interface Props {
   categories: ICategory[];
@@ -24,7 +25,7 @@ const Categories:React.FC<Props> = (categories) => {
       </button>
       <div className="categories" ref={containerRef}>
         {categories.categories.map((category) => (
-          <Category key={category.Category_ID} category={category}/>
+          <Category key={category.Category_ID + product.name} category={category}/>
         ))}
       </div>
       <button className="scroll-btn right" onClick={scrollRight}>

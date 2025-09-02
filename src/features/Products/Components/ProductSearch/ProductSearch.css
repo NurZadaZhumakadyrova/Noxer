@@ -1,0 +1,50 @@
+.list {
+  width: 350px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+  letter-spacing: 0;
+}
+
+.nav-link {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #B5B5B5;
+  flex: 1;
+  text-decoration: none;
+  color: #292928;
+}
+
+.list li::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url('../../../../assets/icon-search.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+@media (min-width: 361px) and (max-width: 1200px) {
+  .list {
+    max-width: 100%;
+    width: 95%;
+    margin-top: 10px;
+  }
+}
+
+.look-fore {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 114.99999999999999%;
+  color: #292928;
+  margin-left: 15px;
+}
