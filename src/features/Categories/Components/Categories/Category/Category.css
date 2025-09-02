@@ -1,0 +1,23 @@
+.category {
+  width: 66px;
+  height: 81px;
+  gap: 3px;
+  margin-right: 5px;
+}
+
+.category-img {
+  width: 66px;
+  height: 66px;
+  border-radius: 15px;
+}
+
+.category-title {
+  width: 66px;
+  height: 12px;
+  margin-top: 3px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 110.00000000000001%;
+  color: #292928;
+  text-align: center;
+}
