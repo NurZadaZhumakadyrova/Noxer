@@ -5,6 +5,7 @@ import { categoriesFromSlice } from './features/Categories/categorySlice.ts';
 import { useEffect } from 'react';
 import { getCategories } from './features/Categories/categoryThunk.ts';
 import Categories from './features/Categories/Components/Categories/Categories.tsx';
+import Products from './features/Products/Products.tsx';
 
 const App = () => {
   const categories = useAppSelector(categoriesFromSlice);
@@ -16,8 +17,10 @@ const App = () => {
 
   return (
     <div className="Container">
-      <Layout/>
-      {categories &&  <Categories categories={categories.categories} />}
+      <Layout>
+        {categories &&  <Categories categories={categories.categories} />}
+        {categories && <Products products={categories.products}/>}
+      </Layout>
     </div>
   );
 };

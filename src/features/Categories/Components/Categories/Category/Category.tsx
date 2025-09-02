@@ -12,7 +12,6 @@ const Category:React.FC<Props> = ({category}) => {
   if (category.Category_Image.trim().length !== 0) {
     image = category.Category_Image;
   }
-  console.log(image);
   return (
     <div className="category">
       <img className="category-img" src={image} alt="category"/>

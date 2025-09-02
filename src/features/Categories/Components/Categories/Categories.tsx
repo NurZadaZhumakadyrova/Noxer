@@ -1,7 +1,7 @@
 import Category from './Category/Category.tsx';
 import React, { useRef } from 'react';
 import type { ICategory } from '../../../../types.ts';
-import "./Category/Categories.css";
+import "./Categories.css";
 
 interface Props {
   categories: ICategory[];

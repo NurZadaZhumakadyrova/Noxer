@@ -38,17 +38,30 @@ export interface IProductImg {
   title: string;
 }
 
+export interface IProductParameter {
+  Parameter_ID: number;
+  chosen: boolean;
+  disabled: boolean;
+  extra_field_color: string | null;
+  extra_field_image: string | null;
+  name: string;
+  old_price: number | null;
+  parameter_string: string;
+  price: number;
+  sort_order: number;
+}
+
 export interface IProduct {
   Created_At: string;
   OnMain: boolean;
   Product_ID: number;
   Product_Name: string;
-  Updated_At: string;
+  Updated_At: string | null;
   categories: ICategory[];
   colors: IColor[];
-  extras: string[];
   images: IProductImg[];
-  marks: IProductMark[];
+  marks: IProductMark;
+  parameters: IProductParameter[];
 }
 
 export interface ApiResponse {
