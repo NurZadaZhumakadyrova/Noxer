@@ -77,9 +77,3 @@ export interface ApiResponse {
   status?: string;
 }
 
-export interface FetchProductsParams {
-  page: number;
-  per_page?: number;
-  on_main?: boolean;
-}
-

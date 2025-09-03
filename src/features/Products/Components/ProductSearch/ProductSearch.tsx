@@ -7,12 +7,10 @@ const ProductSearch = () => {
   const products = useAppSelector(searchProductsFromSlice);
   const categories = useAppSelector(categoriesFromSlice);
 
-  const topSelling = categories?.products.map((product) => {
-    const important = product.importance_num[0];
-    if (important.importance > 0) {
-      return product;
-    }
-  });
+  const topSelling = categories?.products
+    .filter(product => product.importance_num[0]?.importance > 0)
+    .sort((a, b) => b.importance_num[0].importance - a.importance_num[0].importance)
+    .slice(0, 10);
 
   return (
     <>
@@ -27,11 +25,13 @@ const ProductSearch = () => {
         <div>
           <div className="look-fore">Часто ищут</div>
           <ul className="list">
-            {topSelling && topSelling.map((product) => (
-              <li key={product?.Product_ID}>
-                <NavLink className="nav-link" to={`/product/${product?.Product_ID}`}>{product?.Product_Name}</NavLink>
-              </li>
-            ))}
+            {topSelling && topSelling.map((product, index) => (
+              product && (
+                <li key={`${product?.Product_ID + product?.Product_Name + index}`}>
+                  <NavLink className="nav-link" to={`/product/${product?.Product_ID}`}>{product?.Product_Name}</NavLink>
+                </li>
+              )))
+            }
           </ul>
         </div>
       }

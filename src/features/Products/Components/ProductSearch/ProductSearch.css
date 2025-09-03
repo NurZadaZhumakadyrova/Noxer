@@ -33,14 +33,6 @@
   margin-right: 10px;
 }
 
-@media (min-width: 361px) and (max-width: 1200px) {
-  .list {
-    max-width: 100%;
-    width: 95%;
-    margin-top: 10px;
-  }
-}
-
 .look-fore {
   font-weight: 700;
   font-size: 15px;
@@ -48,3 +40,16 @@
   color: #292928;
   margin-left: 15px;
 }
+
+@media (min-width: 361px) and (max-width: 1200px) {
+  .list {
+    max-width: 100%;
+    width: 95%;
+    margin-top: 10px;
+  }
+  .look-fore {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}
+
